@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>ticketsystem</id>
+	<name>Ticket system</name>
+	<name lang="da">Ticketsystem</name>
+	<summary>Customer support tickets inside Nextcloud</summary>
+	<summary lang="da">Kundesupport med sager, direkte i Nextcloud</summary>
+	<description><![CDATA[Ticket system turns customer requests into tickets your team handles inside Nextcloud.
+
+- Tickets with status, priority, tags and assignment
+- @mentions and snooze
+- Reports: volume, response and resolution times
+- Time registration per ticket, customer companies and hourly rates, with an overview and CSV export for invoicing
+- Replies scheduled for later
+- Email intake: the support inbox turns into tickets, replies thread onto the right ticket
+- Public replies to the customer and internal notes that never leave the team
+- A private web page per ticket where customers follow and answer their request
+- Notifications, Activity stream, Dashboard widget, unified search and ticket cards where a ticket link is pasted
+- Events for every ticket change, so add-in apps can extend it without touching the core]]></description>
+	<version>1.0.0</version>
+	<licence>AGPL-3.0-or-later</licence>
+	<author homepage="https://co-optimize.dk">Co-Optimize</author>
+	<namespace>TicketSystem</namespace>
+	<category>organization</category>
+	<website>https://github.com/IT-optimize/nextcloud-ticketsystem</website>
+	<bugs>https://github.com/IT-optimize/nextcloud-ticketsystem/issues</bugs>
+	<repository type="git">https://github.com/IT-optimize/nextcloud-ticketsystem.git</repository>
+	<dependencies>
+		<php min-version="8.2"/>
+		<nextcloud min-version="34" max-version="35"/>
+	</dependencies>
+	<background-jobs>
+		<job>OCA\TicketSystem\BackgroundJob\FetchMailJob</job>
+		<job>OCA\TicketSystem\BackgroundJob\WakeSnoozedJob</job>
+		<job>OCA\TicketSystem\BackgroundJob\SendScheduledJob</job>
+		<job>OCA\TicketSystem\BackgroundJob\CleanupAttachmentsJob</job>
+		<job>OCA\TicketSystem\BackgroundJob\RetentionJob</job>
+	</background-jobs>
+	<commands>
+		<command>OCA\TicketSystem\Command\FetchMail</command>
+	</commands>
+	<settings>
+		<admin>OCA\TicketSystem\Settings\Admin</admin>
+		<admin-section>OCA\TicketSystem\Settings\AdminSection</admin-section>
+	</settings>
+	<activity>
+		<settings>
+			<setting>OCA\TicketSystem\Activity\Setting</setting>
+		</settings>
+		<filters>
+			<filter>OCA\TicketSystem\Activity\Filter</filter>
+		</filters>
+		<providers>
+			<provider>OCA\TicketSystem\Activity\Provider</provider>
+		</providers>
+	</activity>
+	<navigations>
+		<navigation>
+			<name>Ticket system</name>
+			<route>ticketsystem.page.index</route>
+			<icon>app.svg</icon>
+		</navigation>
+	</navigations>
+</info>

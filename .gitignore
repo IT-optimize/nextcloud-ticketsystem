@@ -1,0 +1,11 @@
+node_modules/
+vendor/
+build/
+js/*.map
+.phpunit.cache/
+.phpunit.result.cache
+.DS_Store
+.env
+# Never commit signing keys
+*.key
+*.csr

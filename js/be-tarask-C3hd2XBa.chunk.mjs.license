@@ -1,0 +1,28 @@
+SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: GPL-3.0-or-later
+SPDX-License-Identifier: MIT
+SPDX-FileCopyrightText: Jeff Sagal <sagalbot@gmail.com>
+SPDX-FileCopyrightText: Nextcloud GmbH and Nextcloud contributors
+SPDX-FileCopyrightText: Rob Cresswell <robcresswell@pm.me>
+SPDX-FileCopyrightText: debounce developers
+SPDX-FileCopyrightText: ticketsystem developers
+
+This file is generated from multiple sources. Included packages:
+- @nextcloud/capabilities
+	- version: 1.2.1
+	- license: GPL-3.0-or-later
+- @nextcloud/vue
+	- version: 9.14.1
+	- license: AGPL-3.0-or-later
+- @nextcloud/vue-select
+	- version: 4.1.0
+	- license: MIT
+- debounce
+	- version: 3.0.0
+	- license: MIT
+- ticketsystem
+	- version: 0.1.0
+	- license: AGPL-3.0-or-later
+- vue-material-design-icons
+	- version: 5.4.0
+	- license: MIT

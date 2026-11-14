@@ -1,0 +1,23 @@
+/**
+ * SPDX-FileCopyrightText: 2026 Co-Optimize
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
+
+/* Nextcloud's public header is 44px high; its title and subtitle together
+   need more, which cuts the subtitle's descenders. Make both lines fit. */
+#header .header-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	margin: 0;
+	padding-block: 0;
+}
+
+#header .header-info .header-title {
+	line-height: 20px;
+}
+
+#header .header-info .header-shared-by {
+	line-height: 17px;
+}

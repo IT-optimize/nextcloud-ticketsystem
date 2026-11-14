@@ -1,0 +1,2 @@
+import{m as t,l as o,f as a,a as e}from"./index-DDSrp5c7.chunk.mjs";import{f as s}from"./formatLong-DA4SSbCm.chunk.mjs";import"./ticketsystem-main.mjs";import"./api-dq__oDrF.chunk.mjs";import"./be-tarask-C3hd2XBa.chunk.mjs";import"./Paperclip-BNw2ZSL3.chunk.mjs";const c={code:"en-GB",formatDistance:e,formatLong:s,formatRelative:a,localize:o,match:t,options:{weekStartsOn:1,firstWeekContainsDate:4}};export{c as enGB};
+//# sourceMappingURL=en-GB-BqS_It5-.chunk.mjs.map
